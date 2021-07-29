@@ -1,0 +1,14 @@
+<c:FragmentDefinition
+	xmlns="sap.ui.comp.valuehelpdialog"
+	xmlns:c="sap.ui.core">
+    <ValueHelpDialog id="_IDGenValueHelpDialog1" 
+        title="Product"
+        ok="onValueHeloOkPressDel"
+        cancel="onValueHelpCalcelPressDel"
+        afterClose="onValueHelpAfterCloseDel"
+        key="DelStatus"
+        descriptionKey="Name"
+        supportRanges="true"
+        supportRangesOnly="true">
+    </ValueHelpDialog>
+</c:FragmentDefinition>

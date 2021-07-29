@@ -1,0 +1,39 @@
+<core:FragmentDefinition 
+    xmlns="sap.m" 
+    xmlns:core="sap.ui.core">
+    <Table 
+        id="idSalesOrderTable" 
+        inset="false" 
+        items="{
+            path: '/SalesOrderSet'
+        }">
+        <columns>
+            <Column id="_IDGenColumn1" width="12em">
+                <Text id="_IDGenText1" text="Sales Order ID" />
+            </Column>
+            <Column id="_IDGenColumn2" minScreenWidth="Tablet" demandPopin="true">
+                <Text id="_IDGenText2" text="Customer ID" />
+            </Column>
+            <Column id="_IDGenColumn3" minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+                <Text id="_IDGenText3" text="Billing Status" />
+            </Column>
+            <Column id="_IDGenColumn4" minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+                <Text id="_IDGenText4" text="Delivery Status" />
+            </Column>
+            <Column id="_IDGenColumn5" hAlign="End">
+                <Text id="_IDGenText5" text="Customer Name" />
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem id="sales">
+                <cells>
+                    <ObjectIdentifier id="_IDGenObjectIdentifier1" title="{SalesOrderID}" text="{SalesOrderID}" />
+                    <Text id="_IDGenText6" text="{CustomerID}" />
+                    <Text id="_IDGenText7" text="{BillingStatus}" />
+                    <Text id="_IDGenText8" text="{DeliveryStatus}" />
+                    <Text id="_IDGenText9" text="{CustomerName}" />
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</core:FragmentDefinition>
